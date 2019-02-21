@@ -30,19 +30,19 @@ enum guo{
     private int id;
     @Getter
     private String name;
-
     guo(int id, String name) {
         this.id = id;
         this.name = name;
     }
     public static String lx(int i){
         guo[] values = guo.values();
-        for (guo guo:values){
-            if(guo.getId()==i){
-                return guo.getName();
+        for (guo gu:values){
+            if(gu.getId()==i){
+                return gu.getName();
             }
         }
         return "";
     }
+
 
 }

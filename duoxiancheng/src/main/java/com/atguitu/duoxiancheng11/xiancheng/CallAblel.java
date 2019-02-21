@@ -30,6 +30,7 @@ class s{
         new Thread(f,"A").start();
         // f=new FutureTask<Integer>(c);
         new Thread(f,"B").start();
-        //System.out.println( f.get()+"");
+
+        //System.out.println( f.get()+"");.get阻塞状态，导致其他线程一直等待；while（！f.isDone()）{}轮循状态，导致轮循的线程重复访问，伤cpu
     }
 }
